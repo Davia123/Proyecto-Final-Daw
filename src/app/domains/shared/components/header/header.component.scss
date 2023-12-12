@@ -1,0 +1,14 @@
+.logo-image {
+  width: 100px;
+  height: auto;
+}
+.dropdown-item {
+  text-decoration: none;
+  color: inherit; /* Hereda el color del texto del elemento padre */
+  cursor: default; /* Cambia el cursor para indicar que no es un enlace */
+  display: block; /* Asegura que cada elemento sea un bloque separado */
+}
+
+.dropdown-item:hover {
+  background-color: transparent; /* Cambia el color de fondo al pasar el ratón si es necesario */
+}

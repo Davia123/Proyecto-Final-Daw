@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Cambiado a dirección de columna */
+  justify-content: center;
+  align-items: center;
+
+  /* Opcional: para ocupar toda la altura de la ventana */
+}
+
+.titulo {
+  margin-top: 10px;
+  color: rgb(229, 221, 221);
+  font-family: Verdana;
+}
+.carrusel-item {
+  width: 400px;
+  height: 100px;
+}
+.display-2 {
+  background: linear-gradient(to right, rgb(233, 233, 233), #212121);
+  -webkit-background-clip: text; /* Para WebKit (Safari, Chrome) */
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
+.collage-container {
+  background-color: #212121;
+  width: 1100px;
+
+  /* Ancho del login-container */
+  border-radius: 5px; /* Añadir esquinas redondeadas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agregar sombra */
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+
+}
+
+.logo-image {
+  vertical-align: middle;
+  margin-right: 10px; /* Ajusta este valor para reducir o aumentar la separación */
+}
+
+.carousel-image {
+  margin-right: 10px; /* Ajusta este valor según tus preferencias */
+  margin-bottom: 10px;
+  transition: transform 0.3s; /* Agrega una transición suave para el efecto */
+  max-width: 222px; /* Establece un tamaño máximo del 100% del contenedor */
+  height: 222px;
+}
+
+.carousel-image:hover {
+  transform: scale(1.1); /* Escala al 110% en respuesta al hover */
+}
+h6 {
+  color: white;
+  margin-bottom: 20px;
+}
+.h6-1 {
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+ font-size: 17px;
+}
+
+.imageIcon {
+  max-width: 100px; /* Establece un tamaño máximo del 100% del contenedor */
+  height: 90px;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+.container-icon {
+  margin-bottom: 60px;
+}

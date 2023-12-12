@@ -1,0 +1,82 @@
+/* En tu archivo de estilos CSS, por ejemplo, styles.css */
+.container {
+  display: flex;
+  flex-direction: column; /* Cambiado a dirección de columna */
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espaciado entre los divs */
+  height: 100vh; /* Opcional: para ocupar toda la altura de la ventana */
+}
+
+.logo-image {
+  width: 230px;
+  height: auto;
+}
+.iconoGoogle {
+  width: 30px;
+  height: auto;
+}
+
+
+/* En tu archivo de estilos CSS, por ejemplo, styles.css */
+
+.login-container {
+  background-color: #212121;
+  width: 45rem; /* Ancho del login-container */
+  border-radius: 10px; /* Añadir esquinas redondeadas */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agregar sombra */
+
+  /* Puedes agregar más estilos según sea necesario */
+}
+
+/* Aplicar padding solo al formulario dentro del login-container */
+.login-container form {
+  padding: 0px;
+}
+.botonInicio{
+
+    text-align: center;
+
+}
+
+/* Otros estilos según sea necesario */
+
+.form-check-label {
+  color: white;
+}
+
+
+.login-container form {
+  padding: 20px;
+}
+.tituloIni{
+  color:white;
+  font-size: 14px;
+  text-align: center;
+}
+.login-container input {
+  color: white;
+}
+.center-button {
+  width: 150px; /* Puedes ajustar el ancho según tus necesidades */
+  margin-left: 3000px;
+  margin-right: auto;
+}
+.qr-container {
+  width: 30%;
+  text-align: right;
+
+}
+
+/* Puedes ajustar el tamaño del código QR según tus necesidades */
+.qr-container img {
+  margin-top: 37px;
+  margin-left: 90px;
+  width: 140px;
+  height: auto;
+  border: 6px solid white; /* Primero el ancho, luego el color */
+  border-radius: 5px;
+}
+.columnaForm{
+  margin-left: 10px;
+}

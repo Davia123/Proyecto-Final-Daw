@@ -1,0 +1,60 @@
+<div class="container" *ngIf="!mostrarPaginaPrincipal">
+  <div class="logo-container">
+    <img class="logo-image" src="../../../../../assets/images/logo.png" alt="Logo">
+  </div>
+
+  <div class="login-container">
+    <form class="row" style="width: 45rem; color: white;">
+      <!-- Columna izquierda -->
+      <div class="col-md-6">
+        <div class="columnaForm">
+          <p class="tituloIni">INICIAR SESIÓN CON TU NOMBRE DE CUENTA</p>
+          <!-- Name input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="text" id="form5Example1" class="form-control" placeholder="Usuario" />
+          </div>
+
+          <!-- Password input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <input type="password" id="form5Example2" class="form-control" placeholder="Contraseña" />
+          </div>
+
+          <!-- Checkbox -->
+          <div class="form-check d-flex justify-content-center mb-4">
+            <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" />
+            <label class="form-check-label" for="form5Example3">
+              He leído y acepto los términos.
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna derecha -->
+      <div class="col-md-6 qr-container">
+        <!-- QR Code -->
+        <img src="../../../../../assets/images/QR.png" alt="Código QR">
+      </div>
+
+      <!-- Submit button -->
+      <div class="col-12 text-center">
+        <button (click)="irAPaginaPrincipal()" data-mdb-ripple-init type="button"
+          class="btn btn-primary btn-block mb-4">Iniciar Sesión</button>
+      </div>
+
+    </form>
+  </div>
+
+  <div class="text-center" style="color: white;">
+    <p>No estás registrado? <a href="#!" style="color: white;">Regístrate</a></p>
+    <p>Inicio sesión con:</p>
+    <a class="btn btn-primary btn-lg btn-block" style="background-color: #ffffff; color: #676060; font-weight: bold;"
+      href="#!" role="button">
+      <img class="iconoGoogle" src="../../../../../assets/images/iconoGoogle.jpg" alt="Icon">
+      <i class="fab fa-google me-2"></i>Sign in with Google
+    </a>
+  </div>
+</div>
+<div *ngIf="mostrarPaginaPrincipal">
+  <!-- Aquí estás indicando que el contenido de la página principal está en el componente PaginaPrincipalComponent -->
+  <app-pagina-principal></app-pagina-principal>
+</div>
