@@ -3,6 +3,8 @@
 
 GameVerse es tu plataforma para explorar los juegos más recientes y obtener detalles sobre su disponibilidad. Además, conecta tu usuario y accede a un historial completo de tus juegos, con estadísticas y logros. Simplifica tu experiencia gamer con GameVerse.
 
+## Deploy :rocket:
+https://game-verse-alejandro.netlify.app/
 
 ##  Tecnologias Utilizadas
 
