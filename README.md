@@ -1,6 +1,6 @@
 <div align="center"><img src="src/assets/images/logo.png">
-  <h4>GameVerse es tu plataforma para explorar los juegos más recientes y obtener detalles sobre su disponibilidad. Además, conecta tu usuario y accede a un historial completo de tus juegos, con estadísticas y logros. Simplifica tu experiencia gamer con GameVerse.
-</h4></div>
+  <h4>GameVerse es tu plataforma para explorar los juegos más recientes y obtener detalles sobre su disponibilidad. 
+</h4></div><br><br>
 
 
 
