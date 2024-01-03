@@ -4,17 +4,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './domains/shared/components/header/header.component';
 import { InicioComponent } from './domains/login/pages/inicio/inicio.component';
 import { FooterComponent } from './domains/shared/components/footer/footer.component';
 import { PaginaPrincipalComponent } from './domains/main/pages/pagina-principal/pagina-principal.component';
 import { CarrouselComponent } from './domains/main/components/carrousel/carrousel.component';
+import { AppRoutingModule } from './app-routing.module';
 
-const appRoutes: Routes = [
-  { path: 'login', component: InicioComponent },
-  { path: 'paginaPrincipal', component: PaginaPrincipalComponent },
-];
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +23,10 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes),
+    AppRoutingModule,
+    RouterLink,
+    RouterLinkActive,
+    RouterOutlet,
     FormsModule,
     HttpClientModule,
   ],
