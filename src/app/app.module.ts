@@ -11,6 +11,15 @@ import { FooterComponent } from './domains/shared/components/footer/footer.compo
 import { PaginaPrincipalComponent } from './domains/main/pages/pagina-principal/pagina-principal.component';
 import { CarrouselComponent } from './domains/main/components/carrousel/carrousel.component';
 import { AppRoutingModule } from './app-routing.module';
+import { TimerComponent } from './domains/shared/components/timer/timer.component';
+import { PageNotFoundComponent } from './domains/404/pages/404/404.component';
+import { ActionCategoryComponent } from './domains/categories/pages/actionCategory/actionCategory.component';
+import { CarrerasCategoryComponent } from './domains/categories/pages/carrerasCategory/carrerasCategory.component';
+import { CooperativoCategoryComponent } from './domains/categories/pages/cooperativoCategory/cooperativoCategory.component';
+import { TerrorCategoryComponent } from './domains/categories/pages/terrorCategory/terrorCategory.component';
+import { RolCategoryComponent } from './domains/categories/pages/rolCategory/rolCategory.component';
+import { SupervivenciaCategoryComponent } from './domains/categories/pages/supervivenciaCategory/supervivenciaCategory.component';
+import { Top2weeksComponent } from './domains/tops/pages/top2weeks/top2weeks.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +29,15 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     PaginaPrincipalComponent,
     CarrouselComponent,
+    PageNotFoundComponent,
+    TimerComponent,
+    ActionCategoryComponent,
+    CarrerasCategoryComponent,
+    CooperativoCategoryComponent,
+    TerrorCategoryComponent,
+    RolCategoryComponent,
+    SupervivenciaCategoryComponent,
+    Top2weeksComponent,
   ],
   imports: [
     BrowserModule,
