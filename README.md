@@ -1,4 +1,4 @@
-<div align="center"><img src="src/assets/images/logo.png">
+<div align="center"><img src="src/assets/images/logos/logo.png">
   <h4>GameVerse es tu plataforma para explorar los juegos más recientes y obtener detalles sobre su disponibilidad. 
 </h4></div><br><br>
 
