@@ -10,6 +10,7 @@ import { TerrorCategoryComponent } from './domains/categories/pages/terrorCatego
 import { RolCategoryComponent } from './domains/categories/pages/rolCategory/rolCategory.component';
 import { SupervivenciaCategoryComponent } from './domains/categories/pages/supervivenciaCategory/supervivenciaCategory.component';
 import { Top2weeksComponent } from './domains/tops/pages/top2weeks/top2weeks.component';
+import { TopForeverComponent } from './domains/tops/pages/topForever/topForever.component';
 
 const routes: Routes = [
   { path: 'login', component: InicioComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'rol', component: RolCategoryComponent },
   { path: 'supervivencia', component: SupervivenciaCategoryComponent },
   { path: 'twoWeeks', component: Top2weeksComponent },
+  { path: 'forever', component: TopForeverComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
