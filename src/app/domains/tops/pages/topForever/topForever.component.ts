@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { TopsService } from '../../services/tops.service';
-import { GamesService } from 'src/app/domains/shared/services/games.service';
 import { TopGame, TopGames } from '../../interfaces/top-game.interface';
+import { GamesService } from 'src/app/domains/shared/services/games.service';
+import { TopsService } from '../../services/tops.service';
 
 @Component({
-  selector: 'app-top2weeks',
-  templateUrl: './top2weeks.component.html',
-  styleUrls: ['./top2weeks.component.css'],
+  selector: 'app-topForever',
+  templateUrl: './topForever.component.html',
+  styleUrls: ['./topForever.component.css'],
 })
-export class Top2weeksComponent implements OnInit {
+export class TopForeverComponent implements OnInit {
   topGames: TopGame[] = [];
 
   constructor(
@@ -17,7 +17,7 @@ export class Top2weeksComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.topsService.getTop2Weeks().subscribe((data: TopGames) => {
+    this.topsService.getTopForever().subscribe((data: TopGames) => {
       console.log(data);
       for (const game in data) {
         this.topGames.push(data[game]);
