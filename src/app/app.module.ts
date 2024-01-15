@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -20,6 +20,8 @@ import { TerrorCategoryComponent } from './domains/categories/pages/terrorCatego
 import { RolCategoryComponent } from './domains/categories/pages/rolCategory/rolCategory.component';
 import { SupervivenciaCategoryComponent } from './domains/categories/pages/supervivenciaCategory/supervivenciaCategory.component';
 import { Top2weeksComponent } from './domains/tops/pages/top2weeks/top2weeks.component';
+import { TopForeverComponent } from './domains/tops/pages/topForever/topForever.component';
+import { TopTableComponent } from './domains/tops/components/top-table/top-table.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { Top2weeksComponent } from './domains/tops/pages/top2weeks/top2weeks.com
     RolCategoryComponent,
     SupervivenciaCategoryComponent,
     Top2weeksComponent,
+    TopForeverComponent,
+    TopTableComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,7 +52,11 @@ import { Top2weeksComponent } from './domains/tops/pages/top2weeks/top2weeks.com
     FormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HttpClient,
+    },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
