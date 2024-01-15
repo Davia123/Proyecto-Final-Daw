@@ -1,0 +1,17 @@
+{
+  "/tops/**": {
+    "target": "https://steamspy.com",
+    "pathRewrite": {"^/tops" : ""},
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/game/**": {
+    "target": "https://store.steampowered.com",
+    "pathRewrite": {"^/game" : ""},
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
+

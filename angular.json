@@ -63,12 +63,16 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "proxyConfig": "proxy.conf.json"
+          },
           "configurations": {
             "production": {
               "browserTarget": "GameVerse:build:production"
             },
             "development": {
               "browserTarget": "GameVerse:build:development"
+
             }
           },
           "defaultConfiguration": "development"

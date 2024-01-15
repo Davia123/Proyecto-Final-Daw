@@ -5,16 +5,11 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class TopsService {
+export class GamesService {
   constructor(private http: HttpClient) {}
 
-  getTop2Weeks(): Observable<any> {
-    const url = '/tops/api.php?request=top100in2weeks';
-    return this.http.get<any>(url);
-  }
-
-  getTopForever(): Observable<any> {
-    const url = '/tops/api.php?request=top100forever';
+  getGameByAppIds(appids: any): Observable<any> {
+    const url = '/game/api/appdetails?appids=' + appids;
     return this.http.get<any>(url);
   }
 }
