@@ -8,4 +8,13 @@ import { TopGame } from '../../interfaces/top-game.interface';
 })
 export class TopTableComponent {
   @Input() topGames: TopGame[] = [];
+
+  convertirCentavosADolares(montoEnCentavos: string): string {
+    const montoEnCentavosTransformed = Number(montoEnCentavos);
+    const montoEnDolares = montoEnCentavosTransformed / 100;
+    return montoEnDolares.toLocaleString('en-US', {
+      style: 'currency',
+      currency: 'USD',
+    });
+  }
 }
