@@ -22,6 +22,7 @@ import { SupervivenciaCategoryComponent } from './domains/categories/pages/super
 import { Top2weeksComponent } from './domains/tops/pages/top2weeks/top2weeks.component';
 import { TopForeverComponent } from './domains/tops/pages/topForever/topForever.component';
 import { TopTableComponent } from './domains/tops/components/top-table/top-table.component';
+import { TopChartComponent } from './domains/tops/components/top-chart/top-chart.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { TopTableComponent } from './domains/tops/components/top-table/top-table
     Top2weeksComponent,
     TopForeverComponent,
     TopTableComponent,
+    TopChartComponent,
   ],
   imports: [
     BrowserModule,

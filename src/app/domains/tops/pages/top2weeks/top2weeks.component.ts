@@ -23,8 +23,5 @@ export class Top2weeksComponent implements OnInit {
         this.topGames.push(data[game]);
       }
     });
-    /* this.gamesService.getGameByAppIds(10).subscribe((gameInfo: any) => {
-      console.log(gameInfo);
-    }); */
   }
 }
