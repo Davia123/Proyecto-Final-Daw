@@ -2,56 +2,24 @@
   width: 100px;
   height: auto;
 }
+
 .dropdown-item {
   text-decoration: none;
-  color: inherit; /* Hereda el color del texto del elemento padre */
-  cursor: default; /* Cambia el cursor para indicar que no es un enlace */
-  display: block; /* Asegura que cada elemento sea un bloque separado */
+  color: inherit;
+  cursor: default;
+  display: block;
+  transition: background-color 0.3s;
 }
 
 .dropdown-item:hover {
-  background-color: transparent; /* Cambia el color de fondo al pasar el ratón si es necesario */
-}
-
-/*
-body {
-  background-color: #fbfbfb;
-}
-@media (min-width: 991.98px) {
-  main {
-
-    padding-left: 0;
-  }
+  background-color: #343a40;
+  color: #fff;
+  cursor: pointer;
 }
 
 
-.sidebar {
-
-  top: 0;
-  bottom: 0;
-  left: 0;
-  padding: 58px 0 0;
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
-  width: 240px;
-  z-index: 600;
+.dropdown-menu-dark .dropdown-item:hover {
+  background-color: #343a40;
+  color: #fff;
+  cursor: pointer;
 }
-
- @media (max-width: 991.98px) {
-  .sidebar {
-    width: 100%;
-  }
-}
-.sidebar .active {
-  border-radius: 5px;
-  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
-}
-
-.sidebar-sticky {
-  position: relative;
-  top: 0;
-  height: calc(100vh - 48px);
-  padding-top: 0.5rem;
-  overflow-x: hidden;
-  overflow-y: auto; /* Scrollable contents if viewport is shorter than content.
-}
-*/
