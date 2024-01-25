@@ -11,15 +11,16 @@
   transition: background-color 0.3s;
 }
 
-.dropdown-item:hover {
+/* Aplica el fondo cuando pasas el ratón sobre cualquier elemento del menú desplegable */
+.dropdown:hover .dropdown-item {
   background-color: #343a40;
   color: #fff;
   cursor: pointer;
 }
 
-
-.dropdown-menu-dark .dropdown-item:hover {
+/* Aplica el fondo cuando pasas el ratón sobre el menú desplegable en sí */
+.dropdown:hover {
   background-color: #343a40;
-  color: #fff;
-  cursor: pointer;
 }
+
+/* Aplica el fondo cuando haces clic en una opción de categoría o Top 100 */

@@ -23,6 +23,9 @@ import { Top2weeksComponent } from './domains/tops/pages/top2weeks/top2weeks.com
 import { TopForeverComponent } from './domains/tops/pages/topForever/topForever.component';
 import { TopTableComponent } from './domains/tops/components/top-table/top-table.component';
 import { TopChartComponent } from './domains/tops/components/top-chart/top-chart.component';
+import { LayoutComponent } from './domains/shared/components/layout/layout.component';
+import { CategoriesCardComponent } from './domains/categories/components/categories-card/categories-card.component';
+import { PlatformIconPipe } from './domains/categories/pipes/platform-icon.pipe';
 
 @NgModule({
   declarations: [
@@ -44,6 +47,9 @@ import { TopChartComponent } from './domains/tops/components/top-chart/top-chart
     TopForeverComponent,
     TopTableComponent,
     TopChartComponent,
+    LayoutComponent,
+    CategoriesCardComponent,
+    PlatformIconPipe,
   ],
   imports: [
     BrowserModule,
