@@ -1,0 +1,11 @@
+<div class="card mb-4">
+  <img class="card-img-top" id="imagenCard" [src]="game.background_image" alt="Card image cap">
+  <div class="card-body" id="textCard">
+    <h5 class="card-title">{{game.name}}</h5>
+  </div>
+  <div class="card-footer d-flex justify-content-center">
+    <div *ngFor="let platform of game.platforms" class="mr-2">
+      <img width="30" height="30" [src]="platform.platform.name | platformIcon" alt="{{platform.platform.name}}" />
+    </div>
+  </div>
+</div>
