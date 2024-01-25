@@ -11,19 +11,27 @@ import { RolCategoryComponent } from './domains/categories/pages/rolCategory/rol
 import { SupervivenciaCategoryComponent } from './domains/categories/pages/supervivenciaCategory/supervivenciaCategory.component';
 import { Top2weeksComponent } from './domains/tops/pages/top2weeks/top2weeks.component';
 import { TopForeverComponent } from './domains/tops/pages/topForever/topForever.component';
+import { LayoutComponent } from './domains/shared/components/layout/layout.component';
 
 const routes: Routes = [
   { path: 'login', component: InicioComponent },
-  { path: '', component: InicioComponent },
-  { path: 'main', component: PaginaPrincipalComponent },
-  { path: 'action', component: ActionCategoryComponent },
-  { path: 'carreras', component: CarrerasCategoryComponent },
-  { path: 'cooperativo', component: CooperativoCategoryComponent },
-  { path: 'terror', component: TerrorCategoryComponent },
-  { path: 'rol', component: RolCategoryComponent },
-  { path: 'supervivencia', component: SupervivenciaCategoryComponent },
-  { path: 'twoWeeks', component: Top2weeksComponent },
-  { path: 'forever', component: TopForeverComponent },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  {
+    path: 'userstage',
+    component: LayoutComponent,
+    children: [
+      { path: 'main', component: PaginaPrincipalComponent },
+      { path: '', redirectTo: '/userstage/main', pathMatch: 'full' },
+      { path: 'action', component: ActionCategoryComponent },
+      { path: 'carreras', component: CarrerasCategoryComponent },
+      { path: 'cooperativo', component: CooperativoCategoryComponent },
+      { path: 'terror', component: TerrorCategoryComponent },
+      { path: 'rol', component: RolCategoryComponent },
+      { path: 'supervivencia', component: SupervivenciaCategoryComponent },
+      { path: 'twoWeeks', component: Top2weeksComponent },
+      { path: 'forever', component: TopForeverComponent },
+    ],
+  },
   { path: '**', component: PageNotFoundComponent },
 ];
 
