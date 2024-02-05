@@ -1,6 +1,8 @@
-<div class="container" style="background-color: #545454; height: 1550px">
+<div class="container" style="background-color: #545454; ">
   <h1>JUEGOS DE ACCIÓN</h1>
-
+  <div *ngIf="isLoading" class="d-flex justify-content-center custom-margin">
+    <app-loader></app-loader>
+  </div>
   <div class="row">
     <div class="col-md-4" *ngFor="let game of listedGames">
       <app-categories-card [game]="game"></app-categories-card>

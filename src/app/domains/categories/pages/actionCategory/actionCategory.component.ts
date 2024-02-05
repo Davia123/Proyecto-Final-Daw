@@ -8,6 +8,7 @@ import { Game, ListedGames } from '../../interfaces/listedGames';
   styleUrls: ['./actionCategory.component.css'],
 })
 export class ActionCategoryComponent implements OnInit {
+  isLoading = true;
   listedGames: Game[] = [];
 
   constructor(private categoriesGamesService: CategoriesGamesService) {}
@@ -17,6 +18,7 @@ export class ActionCategoryComponent implements OnInit {
       .getGamesByGenre('action')
       .subscribe((data: ListedGames) => {
         this.listedGames = data.results;
+        this.isLoading = false;
         console.log(data.results);
       });
   }

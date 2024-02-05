@@ -12,6 +12,7 @@ import { SupervivenciaCategoryComponent } from './domains/categories/pages/super
 import { Top2weeksComponent } from './domains/tops/pages/top2weeks/top2weeks.component';
 import { TopForeverComponent } from './domains/tops/pages/topForever/topForever.component';
 import { LayoutComponent } from './domains/shared/components/layout/layout.component';
+import { CategoryDetailComponent } from './domains/categories/pages/categoryDetail/categoryDetail.component';
 
 const routes: Routes = [
   { path: 'login', component: InicioComponent },
@@ -30,6 +31,7 @@ const routes: Routes = [
       { path: 'supervivencia', component: SupervivenciaCategoryComponent },
       { path: 'twoWeeks', component: Top2weeksComponent },
       { path: 'forever', component: TopForeverComponent },
+      { path: 'detail/:id', component: CategoryDetailComponent },
     ],
   },
   { path: '**', component: PageNotFoundComponent },
