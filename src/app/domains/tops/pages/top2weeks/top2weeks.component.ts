@@ -10,6 +10,7 @@ import { TopGame, TopGames } from '../../interfaces/top-game.interface';
 })
 export class Top2weeksComponent implements OnInit {
   topGames: TopGame[] = [];
+  isChart = false;
 
   constructor(
     private topsService: TopsService,
@@ -23,5 +24,9 @@ export class Top2weeksComponent implements OnInit {
         this.topGames.push(data[game]);
       }
     });
+  }
+
+  handleChart() {
+    this.isChart = !this.isChart;
   }
 }

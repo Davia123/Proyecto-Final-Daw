@@ -1,4 +1,23 @@
-<h1>VISTA GENERAL</h1>
-<h4>Los juegos más jugados de la últimas 2 semanas en GameVerse</h4>
-<app-top-chart [juegos]="topGames"></app-top-chart>
-<app-top-table [topGames]="topGames"></app-top-table>
+<div class="content">
+
+  <div class="container" style="background-color: #545454">
+    <h1>VISTA GENERAL</h1>
+    <h4>Los juegos más jugados de las últimas 2 semanas en GameVerse</h4>
+
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-6 text-center"> <!-- Aplicar 'text-center' aquí -->
+        <button class="btn btn-primary btn-block mb-4" *ngIf="!isChart" (click)="handleChart()">Mostrar gráfico de
+          precios</button>
+        <button class="btn btn-primary btn-block mb-4" *ngIf="isChart" (click)="handleChart()">Mostrar Tabla</button>
+      </div>
+    </div>
+
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <app-top-chart *ngIf="isChart" [juegos]="topGames"></app-top-chart>
+        <app-top-table *ngIf="!isChart" [topGames]="topGames"></app-top-table>
+      </div>
+    </div>
+  </div>
+</div>
