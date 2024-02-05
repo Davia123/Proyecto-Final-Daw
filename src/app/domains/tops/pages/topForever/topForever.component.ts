@@ -10,7 +10,7 @@ import { TopsService } from '../../services/tops.service';
 })
 export class TopForeverComponent implements OnInit {
   topGames: TopGame[] = [];
-
+  isChart = false;
   constructor(
     private topsService: TopsService,
     private gamesService: GamesService
@@ -26,5 +26,8 @@ export class TopForeverComponent implements OnInit {
     /* this.gamesService.getGameByAppIds(10).subscribe((gameInfo: any) => {
       console.log(gameInfo);
     }); */
+  }
+  handleChart() {
+    this.isChart = !this.isChart;
   }
 }

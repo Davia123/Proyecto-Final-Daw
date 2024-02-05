@@ -21,7 +21,10 @@ export class TopChartComponent {
         console.log(juego);
         console.log(juego.price);
 
-        return parseInt(juego.price.replace(',', ''), 10);
+        const montoEnCentavosTransformed = Number(juego.price);
+        const montoEnDolares = montoEnCentavosTransformed / 100;
+        console.log(montoEnDolares);
+        return montoEnDolares;
       });
       const nombres = this.juegos.map((juego) => juego.name);
       console.log(precios);
@@ -41,10 +44,29 @@ export class TopChartComponent {
           scales: {
             y: {
               beginAtZero: true,
+              ticks: {
+                callback: function (value, index, values) {
+                  return '$' + value; // Agrega el símbolo de dólar al valor del eje y
+                },
+                color: 'white', // Color del texto en el eje y
+              },
+            },
+            x: {
+              ticks: {
+                // Color del texto en el eje x
+                color: 'white', // Puedes cambiar 'white' al color que desees
+              },
+            },
+          },
+          plugins: {
+            legend: {
+              labels: {
+                color: 'white',
+              },
             },
           },
         },
       });
-    }, 1000);
+    }, 10);
   }
 }

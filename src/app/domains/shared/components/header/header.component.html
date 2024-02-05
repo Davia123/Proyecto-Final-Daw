@@ -1,31 +1,30 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <!-- Cambiado de <a> a <img> para mostrar la imagen -->
-
-    <img class="logo-image" src="../../../../../assets/images/logos/logo.png" alt="Logo">
-
-
-
-    <div class="collapse navbar-collapse" id="mynavbar">
+    <a class="navbar-brand" href="#">
+      <img class="logo-image" src="../../../../../assets/images/logos/logo.png" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link " href="javascript:void(0)" routerLink="/userstage/main"
+          <a class="nav-link" href="javascript:void(0)" routerLink="/userstage/main"
             routerLinkActive="text-decoration-underline">Inicio</a>
         </li>
-        <div class="dropdown">
-          <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
-            Categorias
-          </button>
-          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+            Categorías
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#" routerLink="/userstage/action"
-                routerLinkActive="text-decoration-underline">Acción</a>
-            </li>
+                routerLinkActive="text-decoration-underline">Acción</a></li>
             <li><a class="dropdown-item" href="#" routerLink="/userstage/carreras"
                 routerLinkActive="text-decoration-underline">Carreras</a></li>
             <li><a class="dropdown-item" href="#" routerLink="/userstage/cooperativo"
-                routerLinkActive="text-decoration-underline">Cooperativo</a>
-            </li>
+                routerLinkActive="text-decoration-underline">Cooperativo</a></li>
             <li><a class="dropdown-item" href="#" routerLink="/userstage/terror"
                 routerLinkActive="text-decoration-underline">Terror</a></li>
             <li><a class="dropdown-item" href="#" routerLink="/userstage/rol"
@@ -33,27 +32,19 @@
             <li><a class="dropdown-item" href="#" routerLink="/userstage/supervivencia"
                 routerLinkActive="text-decoration-underline">Supervivencia</a></li>
           </ul>
-
-
-
-
-
-        </div>
-        <div class="dropdown">
-          <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             Top 100
-          </button>
-          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown2">
             <li><a class="dropdown-item" routerLink="/userstage/twoWeeks"
-                routerLinkActive="text-decoration-underline">Top 2 semanas</a>
-            </li>
+                routerLinkActive="text-decoration-underline">Top 2 semanas</a></li>
             <li><a class="dropdown-item" routerLink="/userstage/forever"
                 routerLinkActive="text-decoration-underline">Top Forever</a></li>
-
           </ul>
-
-        </div>
+        </li>
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="text" placeholder="Search">

@@ -14,3 +14,6 @@ h4{
   padding-left: 20px;
   padding-bottom: 20px;
 }
+.content {
+  margin-bottom: 50px; /* Ajusta el margen inferior según la altura del footer */
+}

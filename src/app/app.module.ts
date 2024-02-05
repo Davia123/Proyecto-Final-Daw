@@ -26,6 +26,8 @@ import { TopChartComponent } from './domains/tops/components/top-chart/top-chart
 import { LayoutComponent } from './domains/shared/components/layout/layout.component';
 import { CategoriesCardComponent } from './domains/categories/components/categories-card/categories-card.component';
 import { PlatformIconPipe } from './domains/categories/pipes/platform-icon.pipe';
+import { CategoryDetailComponent } from './domains/categories/pages/categoryDetail/categoryDetail.component';
+import { LoaderComponent } from './domains/shared/components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +52,8 @@ import { PlatformIconPipe } from './domains/categories/pipes/platform-icon.pipe'
     LayoutComponent,
     CategoriesCardComponent,
     PlatformIconPipe,
+    CategoryDetailComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
