@@ -17,11 +17,11 @@
   height: 100px;
 }
 .display-2 {
-  background: linear-gradient(to right, rgb(233, 233, 233), #212121);
-  -webkit-background-clip: text; /* Para WebKit (Safari, Chrome) */
-  background-clip: text;
   color: transparent;
   font-weight: bold;
+  background: rgb(243, 239, 239);
+  -webkit-background-clip: text; /* Para WebKit (Safari, Chrome) */
+  background-clip: text;
 }
 .collage-container {
   background-color: #212121;
@@ -34,14 +34,15 @@
 .logo-container {
   display: flex;
   align-items: center;
-
+  justify-content: center; /* Alinea los elementos horizontalmente */
+  margin-top: 20px;
+  margin-bottom: 20px; /* Ajusta el margen inferior entre el logo y el título */
 }
 
 .logo-image {
-  vertical-align: middle;
-  margin-right: 10px; /* Ajusta este valor para reducir o aumentar la separación */
+  margin-right: 10px; /* Ajusta el margen entre el logo y el título */
+height: 120px;
 }
-
 .carousel-image {
   margin-right: 10px; /* Ajusta este valor según tus preferencias */
   margin-bottom: 10px;
