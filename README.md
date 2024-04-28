@@ -15,7 +15,7 @@ https://game-verse-alejandro.netlify.app/
 
 ## Documentación 💄
 
-- [Guia Estilos]( https://www.canva.com/design/DAFzf3Ovh3o/BOKrzwWr0iCgbuMhG2gYXA/edit?utm_content=DAFzf3Ovh3o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [Documentación]( https://www.canva.com/design/DAFzf3Ovh3o/BOKrzwWr0iCgbuMhG2gYXA/edit?utm_content=DAFzf3Ovh3o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 
 
