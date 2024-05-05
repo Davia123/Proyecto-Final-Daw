@@ -12,7 +12,7 @@
 }
 
 /* Aplica el fondo cuando pasas el ratón sobre cualquier elemento del menú desplegable */
-.dropdown:hover .dropdown-item {
+.dropdown:hover .dropdown-item .nav-item:hover{
   background-color: #343a40;
   color: #fff;
   cursor: pointer;
@@ -24,3 +24,13 @@
 }
 
 /* Aplica el fondo cuando haces clic en una opción de categoría o Top 100 */
+
+.navbar-nav .nav-item {
+  margin-right: 35px;
+font-size: 20px;}
+
+.elementColored:hover{
+  background-color: #343a40;
+  color: #fff;
+  cursor: pointer;
+}

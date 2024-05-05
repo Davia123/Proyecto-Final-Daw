@@ -15,8 +15,9 @@ import { LayoutComponent } from './domains/shared/components/layout/layout.compo
 import { CategoryDetailComponent } from './domains/categories/pages/categoryDetail/categoryDetail.component';
 
 const routes: Routes = [
-  { path: 'login', component: InicioComponent },
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  /* { path: 'login', component: InicioComponent }, */
+  /* { path: '', redirectTo: '/login', pathMatch: 'full' }, */
+  { path: '', redirectTo: '/userstage/main', pathMatch: 'full' },
   {
     path: 'userstage',
     component: LayoutComponent,

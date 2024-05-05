@@ -9,6 +9,8 @@
         <button class="btn btn-primary btn-block mb-4" *ngIf="!isChart" (click)="handleChart()">Mostrar gráfico de
           precios</button>
         <button class="btn btn-primary btn-block mb-4" *ngIf="isChart" (click)="handleChart()">Mostrar Tabla</button>
+        <button class="btn btn-primary btn-block mb-4 print" onClick="window.print()"><img width="20" height="20"
+            src="https://img.icons8.com/officel/20/send-to-printer.png" alt="send-to-printer" /></button>
       </div>
     </div>
 
